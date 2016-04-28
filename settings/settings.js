@@ -1,4 +1,7 @@
 module.exports = {
+    bot: {
+        guide: ''
+    },
     slack: {
         token: ''
     },
