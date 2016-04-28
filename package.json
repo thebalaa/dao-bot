@@ -1,0 +1,25 @@
+{
+  "name": "dao-bot",
+  "version": "0.1.0",
+  "description": "Hi, I'm an Ethereum smart contract utility bot.",
+  "main": "ui-bot.js",
+  "scripts": {
+    "start": "node ui-bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://northwest69@bitbucket.org/laboratoryone/daobot.git"
+  },
+  "author": "laboratory one",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://northwest69@bitbucket.org/laboratoryone/daobot/issues"
+  },
+  "homepage": "https://northwest69@bitbucket.org/laboratoryone/daobott#readme",
+  "dependencies": {
+    "bignumber.js": "^2.3.0",
+    "ddp": "^0.12.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
+}
