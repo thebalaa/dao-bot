@@ -340,6 +340,63 @@ ddpclient.connect((err, wasReconnect) => {
     
     
     // proposals
+    // 'proposal log -t < numberOfLogs >' command
+    controller.hears(['proposal log -t (.*)'], 'direct_message,direct_mention,mention', (bot, message) => {
+        bot.startPrivateConversation(message, (err, convo) => {
+            if (err) {
+                convo.say(err);
+                return console.log(err);
+            }
+
+            const type = 'ProposalAdded';
+            const numberOfLogs = Number(message.match[1]);
+            
+            // Say latest < numberOfLogs > proposals
+            ddpclient.call('event.type.logs', [type, numberOfLogs], (err, result) => {
+                if (err) {
+                    convo.say(err);
+                    return console.log(err);
+                }
+
+                let message = [];
+
+                for (var log in result) {
+                    message.push(`>*Proposals*\n${eventArgs(result[log])}\n>*loggedAt:* ${result[log].loggedAt}\n`);
+                }
+
+                convo.say(message.join('\n\n'));
+            });
+        });
+    });
+    
+    // 'proposal log' command
+    controller.hears(['proposal log'], 'direct_message,direct_mention,mention', (bot, message) => {
+        bot.startPrivateConversation(message, (err, convo) => {
+            if (err) {
+                convo.say(err);
+                return console.log(err);
+            }
+
+            const type = 'ProposalAdded';
+            
+            // Say latest 25 < type > events
+            ddpclient.call('event.type.logs', [type, 25], (err, result) => {
+                if (err) {
+                    convo.say(err);
+                    return console.log(err);
+                }
+
+                let message = [];
+
+                for (var log in result) {
+                    message.push(`${eventArgs(result[log])}\n>*loggedAt:* ${result[log].loggedAt}\n`);
+                }
+
+                convo.say(message.join('\n\n'));
+            });
+        });
+    });
+        
     // 'proposal id < id >' command
     controller.hears(['proposal id (.*)'], 'direct_message,direct_mention,mention', (bot, message) => {
         bot.startPrivateConversation(message, (err, convo) => {

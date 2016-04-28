@@ -54,6 +54,8 @@ event log -t n | Shows the latest n events
 event < type > latest | Shows the latest < type > event
 event < type > log | Shows a log of the last 25 < type > events
 event < type > log -t n | Shows the latest n < type > events
+proposal log | Shows a log of the last 25 proposals
+proposal log -t n | Shows the latest n proposals
 proposal id < id > | Shows the proposal with the id < id >
 proposal events < id > | Shows all events of the proposal with the id < id >
 proposal tag < id > < tag > | tags a proposalID for all users
