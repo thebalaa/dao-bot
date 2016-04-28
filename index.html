@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dao-bot by PeterChauYEG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Dao-bot</h1>
+      <h2 class="project-tagline">an Ethereum DAO-type smart contract utility Slack bot.</h2>
+      <a href="https://github.com/PeterChauYEG/dao-bot" class="btn">View on GitHub</a>
+      <a href="https://github.com/PeterChauYEG/dao-bot/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/PeterChauYEG/dao-bot/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="dao-bot-alpha" class="anchor" href="#dao-bot-alpha" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dao-bot (alpha)</h1>
+
+<p>Hi, I'm an Ethereum smart contract utility bot.</p>
+
+<p>I provide information about Smart Contracts and watch their events. Currently, I am only accessable at my <a href="https://daobot.slack.com">testing slack</a>.</p>
+
+<p>My Ethereum wallet address is 0x1A416af553Faca53b4be48DCFB6E749C9737455D.</p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>You can either direct message me or @dao-bot to get information.</p>
+
+<p>To view all my commands, message me 'help':</p>
+
+<p><img src="http://res.cloudinary.com/dqza9dw1h/image/upload/v1461445150/daobot/help.png" alt="help"></p>
+
+<p>Look up Smart Contract events types:</p>
+
+<p><img src="http://res.cloudinary.com/dqza9dw1h/image/upload/v1461445150/daobot/list_event.png" alt="list event"></p>
+
+<p>Look up all Smart Contract events of a certain type:</p>
+
+<p><img src="http://res.cloudinary.com/dqza9dw1h/image/upload/v1461445149/daobot/event_type_log_-t_n.png" alt="event type"></p>
+
+<p>Look up a Proposal:</p>
+
+<p><img src="http://res.cloudinary.com/dqza9dw1h/image/upload/v1461445148/daobot/proposal_id_n.png" alt="proposal id"></p>
+
+<p>Look up all events related to a Proposal:</p>
+
+<p><img src="http://res.cloudinary.com/dqza9dw1h/image/upload/v1461445148/daobot/proposal_events_n.png" alt="proposal events"></p>
+
+<h2>
+<a id="wip" class="anchor" href="#wip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WIP</h2>
+
+<p>proposal tag &lt; id &gt; &lt; tag &gt;
+proposal watch &lt; id &gt;
+watch list
+watch remove &lt; id &gt;</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>@dao-bot &lt; command &gt;</p>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>about</td>
+<td>Information about this bot</td>
+</tr>
+<tr>
+<td>help</td>
+<td>List of commands and other helpful information</td>
+</tr>
+<tr>
+<td>list event</td>
+<td>List this contract's events</td>
+</tr>
+<tr>
+<td>list function</td>
+<td>List this contract's functions</td>
+</tr>
+<tr>
+<td>event latest</td>
+<td>Shows the latest event</td>
+</tr>
+<tr>
+<td>event log</td>
+<td>Shows a log of the last 25 events</td>
+</tr>
+<tr>
+<td>event log -t n</td>
+<td>Shows the latest n events</td>
+</tr>
+<tr>
+<td>event &lt; type &gt; latest</td>
+<td>Shows the latest &lt; type &gt; event</td>
+</tr>
+<tr>
+<td>event &lt; type &gt; log</td>
+<td>Shows a log of the last 25 &lt; type &gt; events</td>
+</tr>
+<tr>
+<td>event &lt; type &gt; log -t n</td>
+<td>Shows the latest n &lt; type &gt; events</td>
+</tr>
+<tr>
+<td>proposal id &lt; id &gt;</td>
+<td>Shows the proposal with the id &lt; id &gt;</td>
+</tr>
+<tr>
+<td>proposal events &lt; id &gt;</td>
+<td>Shows all events of the proposal with the id &lt; id &gt;</td>
+</tr>
+<tr>
+<td>proposal tag &lt; id &gt; &lt; tag &gt;</td>
+<td>tags a proposalID for all users</td>
+</tr>
+<tr>
+<td>uptime</td>
+<td>Shows how long this bot has been running</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="additional-features" class="anchor" href="#additional-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional Features</h2>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event Notification</td>
+<td>Sends new Events to #events in real-time --disabled</td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/PeterChauYEG/dao-bot">Dao-bot</a> is maintained by <a href="https://github.com/PeterChauYEG">PeterChauYEG</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
