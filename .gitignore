@@ -1,2 +1,3 @@
 node_modules/
-settings/settings.js
+npm-debug.log
+env_vars

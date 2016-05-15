@@ -18,6 +18,7 @@
   "homepage": "https://northwest69@bitbucket.org/laboratoryone/daobott#readme",
   "dependencies": {
     "bignumber.js": "^2.3.0",
+    "botkit": "^0.1.1",
     "ddp": "^0.12.0",
     "underscore": "^1.8.3"
   },

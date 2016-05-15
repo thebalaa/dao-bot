@@ -3,7 +3,7 @@ module.exports = {
         guide: ''
     },
     slack: {
-        token: ''
+        token: process.env.SLACK_API_TOKEN
     },
     daoApi: {
         host: '',
